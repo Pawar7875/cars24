@@ -1,0 +1,48 @@
+.bgImage {
+  background-image: url("../../components/assets/Images/bgImage.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.home-content {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(0, -50%);
+  padding: 10px;
+}
+
+.home-title {
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+.home-subtext {
+  font-weight: 40px;
+  font-size: 14px;
+  padding: 15px 0 30px 0;
+}
+
+.home-button {
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contained {
+  border-color: #db0f62;
+  background: #db0f62;
+  color: #ffff;
+}
+
+.outlined {
+    border-color: #db0f62;
+    background-color: transparent;
+    color: #db0f62;
+}
