@@ -34,7 +34,10 @@ const Signin = () => {
     <div>
       <Navbar />
       <div style={styles.container}>
-        <div className="mb-3">
+      <div style={{ textAlign: "center" }}>
+          <h3>Sign In</h3>
+        </div>
+        <div className="mb-3 mt-3">
           <label>Enter Your Email</label>
           <input
             type="email"

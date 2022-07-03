@@ -55,7 +55,7 @@ const Signup = () => {
     <div>
       <Navbar />
       <div style={styles.container}>
-        <div style={{ textAlign: "center", borderBottom: "1px solid gray" }}>
+        <div style={{ textAlign: "center" }}>
           <h3>Sign Up</h3>
         </div>
         <div className="mb-3 mt-3">
