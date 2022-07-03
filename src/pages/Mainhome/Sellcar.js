@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import Navbar from "../Navbar/navbar";
+import Modal from "../Modal/Modal";
 
 const Sellcar = () => {
   const [cmp_name, setcmp_name] = useState("");
@@ -19,16 +20,23 @@ const Sellcar = () => {
   const [rto, setrto] = useState("");
   const [number, setnumber] = useState("");
   const [cnumber, setcnumber] = useState("");
+  const [showModal, setShowModal] = useState(false);
   // const [trans_type, settrans_type] = useState('')
   const navigate = useNavigate();
   const sellit = () => {
-    console.log(rto);
-    toast.success("Sell order Placed");
-    navigate("/home");
+    setShowModal(true);
+    // toast.success("Sell order Placed");
+    // navigate("/home");
   };
+  const hideModal=()=>{
+    setShowModal(false)
+  }
   return (
     <div>
       <Navbar />
+      <Modal show={showModal} handleClose={hideModal}>
+        <p>Modal</p>
+      </Modal>
       <div className="container-fluid" display="flex">
         <b textAlign="center">Sell From Your Home</b>
         <b> Instany Payment</b>
@@ -293,7 +301,7 @@ const Sellcar = () => {
         </div>
         <div style={{ textAlign: "center" }}>
           <button style={styles.sellButton} onClick={sellit}>
-           Sell Car
+            Sell Car
           </button>
         </div>
       </div>
@@ -325,7 +333,7 @@ const styles = {
     borderStyle: "solid",
     borderColor: "#db0f62",
     borderRadius: 30,
-    color:"#fff"
+    color: "#fff",
   },
 };
 export default Sellcar;

@@ -55,7 +55,10 @@ const Signup = () => {
     <div>
       <Navbar />
       <div style={styles.container}>
-        <div className="mb-3">
+        <div style={{ textAlign: "center", borderBottom: "1px solid gray" }}>
+          <h3>Sign Up</h3>
+        </div>
+        <div className="mb-3 mt-3">
           <label>First Name</label>
           <input
             type="text"
@@ -130,8 +133,10 @@ const Signup = () => {
           <button style={styles.signinButton} onClick={signup}>
             Register
           </button>
-          <label>Already Register ? </label>
-          <Link to="/Signin">Signin Here</Link>
+          <div className="m-2">
+            <label>Already Register ? </label>
+            <Link to="/Signin">Signin Here</Link>
+          </div>
         </div>
       </div>
     </div>
@@ -140,7 +145,7 @@ const Signup = () => {
 const styles = {
   container: {
     width: 450,
-    height: 700,
+    height: " fit-content",
     padding: 20,
     position: "relative",
     top: 20,
@@ -152,14 +157,13 @@ const styles = {
     boxShadow: "1px 1px 20px 5px #C9C9C9",
   },
   signinButton: {
-    position: "relative",
+    backgroundColor: "#db0f62",
     width: "100%",
     height: 40,
-    backgroundColor: "#db0f62",
-    color: "white",
-    borderRadius: 5,
-    border: "none",
-    marginTop: 10,
+    borderStyle: "solid",
+    borderColor: "#db0f62",
+    borderRadius: 30,
+    color: "#fff",
   },
 };
 export default Signup;
