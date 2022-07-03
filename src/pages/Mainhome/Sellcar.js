@@ -37,15 +37,16 @@ const Sellcar = () => {
       <Modal show={showModal} handleClose={hideModal}>
         <p>Modal</p>
       </Modal>
-      <div className="container-fluid" display="flex">
+      
+      {/* <div className="container-fluid" display="flex">
         <b textAlign="center">Sell From Your Home</b>
         <b> Instany Payment</b>
-      </div>
+      </div> */}
       <div style={styles.container}>
-        {/* <div style={{ textAlign: 'center', marginBottom: '20px', backgroundColor: 'orange', height: '60px', borderRadius: 30, position: 'relative' }}>
-                    <h2>Enter The Details</h2>
-                </div> */}
-        <div class="mb-3 row">
+      <div style={{ textAlign: "center" }}>
+          <h3>Enter The Details</h3>
+        </div>
+        <div class="mb-3 row mt-3">
           <label for="staticEmail" class="col-sm-2 col-form-label">
             Company Name
           </label>
@@ -311,8 +312,8 @@ const Sellcar = () => {
 
 const styles = {
   container: {
-    width: "80%",
-    height: 900,
+    width: "70%",
+    height: "fit-content",
     padding: 20,
     position: "relative",
     top: 10,
@@ -320,7 +321,7 @@ const styles = {
     right: 10,
     bottom: 0,
     margin: "auto",
-    borderColor: "black",
+    borderColor: "#db0f62",
     borderRadius: 50,
     broderWidth: 1,
     borderStyle: "solid",

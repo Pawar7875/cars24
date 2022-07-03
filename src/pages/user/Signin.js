@@ -72,12 +72,13 @@ const Signin = () => {
 };
 
 const styles = {
+  
   container: {
     width: 400,
-    height: 300,
+    height: "fit-content",
     padding: 20,
     position: "relative",
-    top: 30,
+    top: 70,
     margin: "auto",
     borderColor: "#db0f62",
     borderRadius: 50,
